@@ -1,0 +1,19 @@
+name: Add to cache
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  clear-cache:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Add to cache
+        uses: actions/cache@v3
+          with:
+            path: text.txt
+            key: foobar
