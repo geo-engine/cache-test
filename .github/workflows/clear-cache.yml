@@ -23,4 +23,6 @@ jobs:
               repo: 'cache-test'
             });
 
-            console.log(result.data.actions_caches);
+            for (const cache of result.data.actions_caches) {
+              console.log(`Deleting cache ${cache.id}...`);
+            }
