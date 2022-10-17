@@ -14,6 +14,6 @@ jobs:
     steps:
       - name: Add to cache
         uses: actions/cache@v3
-          with:
-            path: text.txt
-            key: foobar
+        with:
+          path: text.txt
+          key: foobar
