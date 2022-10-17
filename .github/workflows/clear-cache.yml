@@ -30,7 +30,7 @@ jobs:
             for (const cache of result.data.actions_caches) {
               console.log(`Deleting cache ${cache.id}...`);
 
-              await octokit.request('DELETE /repos/{owner}/{repo}/actions/caches/{cache_id}', {
+              await github.request('DELETE /repos/{owner}/{repo}/actions/caches/{cache_id}', {
                 owner,
                 repo,
                 cache_id: cache.id
