@@ -8,12 +8,12 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  clear-cache:
+  add-to-cache:
     runs-on: ubuntu-22.04
 
     steps:
       - name: Add to cache
         uses: actions/cache@v3
         with:
-          path: text.txt
+          path: test.txt
           key: foobar
