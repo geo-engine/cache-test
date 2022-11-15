@@ -31,6 +31,7 @@ jobs:
               });
 
               caches = result.data.actions_caches;
+              console.log(`Found ${caches.length} caches`);
 
               for (const cache of caches) {
                 console.log(`Deleting cache ${cache.id}...`);
