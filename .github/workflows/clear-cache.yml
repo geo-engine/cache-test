@@ -41,4 +41,4 @@ jobs:
                   cache_id: cache.id
                 })
               }
-            } while (caches.length > 0));
+            } while (caches.length > 0);
